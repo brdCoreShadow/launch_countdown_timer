@@ -6,6 +6,7 @@ export const TimerStyled = styled.ul`
   align-items: center;
   justify-content: space-between;
 
+  margin-bottom: 260px;
   margin-left: 24px;
   margin-right: 24px;
 
@@ -29,37 +30,37 @@ export const TimerStyled = styled.ul`
     & > div {
       position: relative;
 
-      
+      height: 72px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+
+      background-color: #343650;
+
+      border-radius: 4px;
+
+      box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.6);
+
+      overflow: hidden;
     }
   }
 `;
 
-export const UpperCon = styled.div`
-  display: inline-block;
-
-  width: 70px;
-  height: 35px;
-
-  background-color: #343650;
-
-  border-top-right-radius: 4px;
-  border-top-left-radius: 4px;
-`;
 
 export const LowerCon = styled.div`
   display: inline-block;
 
   width: 70px;
-  height: 35px;
+  height: 50%;
 
   background-color: #343650;
 
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
 
-  opacity: 0.7;
-
-  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.6);
+  opacity: 0.2;
 `;
 
 export const Number = styled.h3`

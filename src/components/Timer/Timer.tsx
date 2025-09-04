@@ -6,16 +6,14 @@ const Timer: React.FC = () => {
     <SC.TimerStyled>
       <li>
         <div>
-          <SC.UpperCon></SC.UpperCon>
-          {/* <GeometryLine /> */}
-          {/* <SC.Number>08</SC.Number> */}
+          <GeometryLine />
+          <SC.Number>08</SC.Number>
           <SC.LowerCon></SC.LowerCon>
         </div>
         <p>days</p>
       </li>
       <li>
         <div>
-          <SC.UpperCon></SC.UpperCon>
           <GeometryLine />
           <SC.Number>23</SC.Number>
           <SC.LowerCon></SC.LowerCon>
@@ -24,7 +22,6 @@ const Timer: React.FC = () => {
       </li>
       <li>
         <div>
-          <SC.UpperCon></SC.UpperCon>
           <GeometryLine />
           <SC.Number>55</SC.Number>
           <SC.LowerCon></SC.LowerCon>
@@ -33,7 +30,6 @@ const Timer: React.FC = () => {
       </li>
       <li>
         <div>
-          <SC.UpperCon></SC.UpperCon>
           <GeometryLine />
           <SC.Number>41</SC.Number>
           <SC.LowerCon></SC.LowerCon>
