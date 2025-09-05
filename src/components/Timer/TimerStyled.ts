@@ -10,11 +10,19 @@ export const TimerStyled = styled.ul`
   margin-left: 24px;
   margin-right: 24px;
 
+  @media (min-width: 1280px) {
+    justify-content: center;
+  }
+
   & > li {
     text-transform: uppercase;
 
     &:not(:last-of-type) {
       margin-right: 16px;
+
+      @media (min-width: 1280px) {
+        margin-right: 32px;
+      }
     }
 
     & > p {
@@ -36,7 +44,6 @@ export const TimerStyled = styled.ul`
       flex-direction: column;
       justify-content: flex-end;
 
-
       background-color: #343650;
 
       border-radius: 4px;
@@ -44,10 +51,13 @@ export const TimerStyled = styled.ul`
       box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.6);
 
       overflow: hidden;
+
+      @media (min-width: 1280xp) {
+        height: 150px;
+      }
     }
   }
 `;
-
 
 export const LowerCon = styled.div`
   display: inline-block;
@@ -61,6 +71,10 @@ export const LowerCon = styled.div`
   border-bottom-left-radius: 4px;
 
   opacity: 0.2;
+
+  @media (min-width: 1280px) {
+    width: 148px;
+  }
 `;
 
 export const Number = styled.h3`
