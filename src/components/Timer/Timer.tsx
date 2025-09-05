@@ -1,13 +1,17 @@
+import { ITimer } from "@/utils/types";
 import GeometryLine from "../GeometryLine/GeometryLine";
 import * as SC from "./TimerStyled";
 
-const Timer: React.FC = () => {
-  return (
+const Timer: React.FC<ITimer> = ({timeLeft}) => {
+  
+    const {days, hours, minutes, seconds} =timeLeft;
+  
+    return (
     <SC.TimerStyled>
       <li>
         <div>
           <GeometryLine />
-          <SC.Number>08</SC.Number>
+          <SC.Number>{days}</SC.Number>
           <SC.LowerCon></SC.LowerCon>
         </div>
         <p>days</p>
@@ -15,7 +19,7 @@ const Timer: React.FC = () => {
       <li>
         <div>
           <GeometryLine />
-          <SC.Number>23</SC.Number>
+          <SC.Number>{hours}</SC.Number>
           <SC.LowerCon></SC.LowerCon>
         </div>
         <p>hours</p>
@@ -23,7 +27,7 @@ const Timer: React.FC = () => {
       <li>
         <div>
           <GeometryLine />
-          <SC.Number>55</SC.Number>
+          <SC.Number>{minutes}</SC.Number>
           <SC.LowerCon></SC.LowerCon>
         </div>
         <p>minutes</p>
@@ -31,7 +35,7 @@ const Timer: React.FC = () => {
       <li>
         <div>
           <GeometryLine />
-          <SC.Number>41</SC.Number>
+          <SC.Number>{seconds}</SC.Number>
           <SC.LowerCon></SC.LowerCon>
         </div>
         <p>seconds</p>
